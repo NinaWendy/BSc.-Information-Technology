@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Link Test</title>
+</head>
+<body>
+<a id="mylink" href="http://mysite.com">Click me</a><br />
+<script>
+url = document.links.mylink.href
+url = document.getElementById('mylink').href // Microsoft implementation
+// url = $('mylink').href
+document.write('The URL is ' + url)
+if (1 == true) document.write('true') // True
+// if (1 == TRUE) document.write('TRUE') // Will cause an error
+
+//Literral - simplest form of an expression
+//Unary operator $a++
+//Binary operator +,-
+//Relational operator -equality, comparison,logical
+//Ternary operator ? e.g x(condition) ? y(True):z(False)
+//The direction of processing is called the operator’s associativity.
+
+string = "The quick brown fox jumps over the lazy dog"
+with (string)
+{
+document.write("The string is " + length + " characters<br />")
+document.write("In upper case it's: " + toUpperCase())
+}
+onerror = errorHandler
+document.writ("Welcome to this website") // Deliberate error
+function errorHandler(message, url, line)
+{
+out = "Sorry, an error was encountered.\n\n";
+out += "Error: " + message + "\n";
+out += "URL: "
++ url + "\n";
+out += "Line: " + line + "\n\n";
+out += "Click OK to continue.\n\n";
+alert(out);
+return true;
+}
+</script>
+</body>
+</html>
