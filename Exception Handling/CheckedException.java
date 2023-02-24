@@ -21,6 +21,8 @@ public class CheckedException{
             pw = new PrintWriter("file.txt");
             pw.println("Saved");
         } catch (Exception e) {
+            //Reading the custom message
+            System.out.println(e.getMessage());
             System.out.println("FILE NOT FOUND");//FileNotFoundException
         }
         System.out.println("File saved successfully");  

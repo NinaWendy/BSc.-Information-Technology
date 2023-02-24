@@ -10,8 +10,12 @@ public class MultiCatchBlock {
             int result = num1/num2;
             System.out.println(result);
         }catch (ArithmeticException e) {
+            //Reading the custom message
+            System.out.println(e.getMessage());
             System.out.println("Arithmetic exception occurs");
         }catch (Exception e) {
+            //Reading the custom message
+            System.out.println(e.getMessage());
             System.out.println("Parent exception");
         }
     }
