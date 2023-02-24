@@ -13,6 +13,8 @@ public class Throw {
                 System.out.println("Elidgible to vote");
             }
         } catch (Exception e) {
+            //Reading the custom message
+            System.out.println(e.getMessage());
             System.out.println("Exception caught");
         }
     }
